@@ -1,0 +1,81 @@
+body {
+    background: rgb(34, 193, 195);
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(255, 255, 255, 1) 100%);
+}
+
+body {
+    padding-top: 56px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    /* semibold */
+    scroll-behavior: smooth;
+}
+
+section {
+    padding: 60px 0;
+}
+
+.highlight {
+    color: rgb(95, 51, 255);
+    /* Голубой цвет */
+}
+
+.tech-card {
+    background-color: #ffffff;
+    transition: transform 0.3s ease;
+}
+
+.tech-card:hover {
+    transform: translateY(-5px);
+}
+
+.tech-card img {
+    max-height: 40px;
+}
+
+.tech-card p {
+    margin-left: 10px;
+    font-size: 1.15rem;
+    flex: 1;
+}
+
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.float {
+    display: inline-block;
+    animation: float 3s ease-in-out infinite;
+}
+
+.small-img {
+    width: 60px;
+    height: auto;
+}
+
+.card-link {
+    text-decoration: none;
+    /* Убираем подчеркивание текста */
+    color: inherit;
+    /* Наследуем цвет текста */
+}
+
+.card-link:hover {
+    text-decoration: none;
+    /* Убираем подчеркивание текста */
+    color: inherit;
+    /* Наследуем цвет текста */
+    transform: scale(1.05);
+    /* Увеличение масштаба при наведении */
+}
